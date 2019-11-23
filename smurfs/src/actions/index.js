@@ -1,6 +1,7 @@
 import axios from 'axios'
 
 export const GET_SMURF_DATA = 'GET_SMURF_DATA';
+export const ADD_SMURF = 'ADD_SMURF';
 
 export const getSmurfData = () => dispatch => {
     axios
@@ -13,4 +14,11 @@ export const getSmurfData = () => dispatch => {
         .catch(err => {
             console.log(err);
         });            
+}
+
+export const addSmurf = item => {
+    return {
+        type: ADD_SMURF,
+        payload: item
+    }
 }
