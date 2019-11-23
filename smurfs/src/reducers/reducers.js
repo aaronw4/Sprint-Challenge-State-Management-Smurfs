@@ -1,4 +1,4 @@
-import GET_SMURF_DATA from '../actions'
+import {GET_SMURF_DATA} from '../actions'
 
 const initialState = {
     smurfs: []
