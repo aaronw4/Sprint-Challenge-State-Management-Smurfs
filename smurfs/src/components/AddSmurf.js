@@ -11,7 +11,7 @@ const AddSmurf = props => {
         setName(e.target.value);
     }
     const handleHeight = e => {
-        setHeight(e.target.value);
+        setHeight(e.target.value+'cm');
     }
     const handleAge = e => {
         setAge(e.target.value);

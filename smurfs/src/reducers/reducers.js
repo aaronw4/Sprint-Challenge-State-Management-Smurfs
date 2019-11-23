@@ -1,4 +1,4 @@
-import {GET_SMURF_DATA, POST_SMURF} from '../actions'
+import {GET_SMURF_DATA, POST_SMURF, REMOVE_SMURF} from '../actions'
 
 const initialState = {
     smurfs: [
@@ -21,6 +21,11 @@ const reducer = (state = initialState, action) => {
                     age: action.payload.age,
                     id: action.payload.id
                 }]
+            }
+        case REMOVE_SMURF:            
+            return {
+                ...state,
+                smurfs: state.smurfs.map(smurf => smurf.id !== action.payload)               
             }
         default:
             return state;
