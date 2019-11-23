@@ -1,4 +1,4 @@
-import {GET_SMURF_DATA, ADD_SMURF} from '../actions'
+import {GET_SMURF_DATA, POST_SMURF} from '../actions'
 
 const initialState = {
     smurfs: [
@@ -12,7 +12,7 @@ const reducer = (state = initialState, action) => {
             return {
                 smurfs: action.payload
             }
-        case ADD_SMURF:
+        case POST_SMURF:
             return {
                 ...state,
                 smurfs: [...state.smurfs, {

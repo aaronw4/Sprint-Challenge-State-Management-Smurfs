@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {connect} from 'react-redux';
-import {addSmurf} from '../actions'
+import {postSmurf} from '../actions'
 
 const AddSmurf = props => {
     const [name, setName] = useState();
@@ -15,6 +15,17 @@ const AddSmurf = props => {
     }
     const handleAge = e => {
         setAge(e.target.value);
+    }
+    const handleClick = () => {
+        props.postSmurf({
+            name: name,
+            height: height,
+            age: age,
+            id: props.smurfs.length
+        });
+        setName('');
+        setHeight('');
+        setAge('');
     }
 
     return(
@@ -50,16 +61,7 @@ const AddSmurf = props => {
                     onChange={handleAge}
                 />
             </div>
-            <button
-                onClick={() => 
-                    props.addSmurf({
-                        name: name,
-                        height: height,
-                        age: age,
-                        id: props.smurfs.length
-                    })
-                }
-            >
+            <button onClick={handleClick}>
                 Add Smurf
             </button>
         </div>
@@ -74,5 +76,5 @@ const mapStateToProps = state => {
 
 export default connect(
     mapStateToProps,
-    {addSmurf}
+    {postSmurf}
 )(AddSmurf);
