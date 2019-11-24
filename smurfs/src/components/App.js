@@ -22,8 +22,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Smurf Village Members</h1>
-        <Smurfs smurfs={this.props.smurfs} remove={this.props.removeSmurf}/>
         <AddSmurf/>
+        <Smurfs smurfs={this.props.smurfs} remove={this.props.removeSmurf}/>
       </div>
     );
   }

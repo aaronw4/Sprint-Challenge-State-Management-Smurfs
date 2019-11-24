@@ -1,17 +1,20 @@
 import React, {useState} from 'react';
 import {connect} from 'react-redux';
-import {postSmurf} from '../actions'
+import {postSmurf, addNumber} from '../actions'
 
 const AddSmurf = props => {
     const [name, setName] = useState();
     const [height, setHeight] = useState();
     const [age, setAge] = useState();
+    const [newID, setNewID] = useState(props.number);
+
+    let newNumber = (Number(newID) + 1).toString()
 
     const handleName = e => {
         setName(e.target.value);
     }
     const handleHeight = e => {
-        setHeight(e.target.value+'cm');
+        setHeight(e.target.value);
     }
     const handleAge = e => {
         setAge(e.target.value);
@@ -21,11 +24,14 @@ const AddSmurf = props => {
             name: name,
             height: height,
             age: age,
-            id: props.smurfs.length
+            id: newID
         });
         setName('');
         setHeight('');
         setAge('');
+        props.addNumber(newNumber);
+        setNewID(newNumber);
+        console.log(newID)
     }
 
     return(
@@ -70,11 +76,12 @@ const AddSmurf = props => {
 
 const mapStateToProps = state => {
     return{
-        smurfs: state.smurfs
+        smurfs: state.smurfs,
+        number: state.number
     }
 }
 
 export default connect(
     mapStateToProps,
-    {postSmurf}
+    {postSmurf, addNumber}
 )(AddSmurf);
