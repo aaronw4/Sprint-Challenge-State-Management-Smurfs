@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Sprint-Challenge-State-Management-Smurfs/precache-manifest.a7a835a784466b64f88bd4b670313ddf.js"
+  "/Sprint-Challenge-State-Management-Smurfs/precache-manifest.0a4839ec6b88840145420c896c95a6ed.js"
 );
 
 self.addEventListener('message', (event) => {

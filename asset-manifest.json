@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Sprint-Challenge-State-Management-Smurfs/static/css/main.5af0d07d.chunk.css",
-    "main.js": "/Sprint-Challenge-State-Management-Smurfs/static/js/main.d8cbff33.chunk.js",
-    "main.js.map": "/Sprint-Challenge-State-Management-Smurfs/static/js/main.d8cbff33.chunk.js.map",
+    "main.js": "/Sprint-Challenge-State-Management-Smurfs/static/js/main.feef38de.chunk.js",
+    "main.js.map": "/Sprint-Challenge-State-Management-Smurfs/static/js/main.feef38de.chunk.js.map",
     "runtime~main.js": "/Sprint-Challenge-State-Management-Smurfs/static/js/runtime~main.1487400e.js",
     "runtime~main.js.map": "/Sprint-Challenge-State-Management-Smurfs/static/js/runtime~main.1487400e.js.map",
     "static/js/2.cebd69c7.chunk.js": "/Sprint-Challenge-State-Management-Smurfs/static/js/2.cebd69c7.chunk.js",
     "static/js/2.cebd69c7.chunk.js.map": "/Sprint-Challenge-State-Management-Smurfs/static/js/2.cebd69c7.chunk.js.map",
     "index.html": "/Sprint-Challenge-State-Management-Smurfs/index.html",
-    "precache-manifest.a7a835a784466b64f88bd4b670313ddf.js": "/Sprint-Challenge-State-Management-Smurfs/precache-manifest.a7a835a784466b64f88bd4b670313ddf.js",
+    "precache-manifest.0a4839ec6b88840145420c896c95a6ed.js": "/Sprint-Challenge-State-Management-Smurfs/precache-manifest.0a4839ec6b88840145420c896c95a6ed.js",
     "service-worker.js": "/Sprint-Challenge-State-Management-Smurfs/service-worker.js",
     "static/css/main.5af0d07d.chunk.css.map": "/Sprint-Challenge-State-Management-Smurfs/static/css/main.5af0d07d.chunk.css.map"
   }

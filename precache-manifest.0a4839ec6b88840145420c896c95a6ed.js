@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2cb327614de0800451e666c91ae5de0b",
+    "revision": "4e8144b4256473403a02fbe767f5f15f",
     "url": "/Sprint-Challenge-State-Management-Smurfs/index.html"
   },
   {
-    "revision": "069bdb9b0c740b92c312",
+    "revision": "a99ecdffb5b508ab22d4",
     "url": "/Sprint-Challenge-State-Management-Smurfs/static/css/main.5af0d07d.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Sprint-Challenge-State-Management-Smurfs/static/js/2.cebd69c7.chunk.js"
   },
   {
-    "revision": "069bdb9b0c740b92c312",
-    "url": "/Sprint-Challenge-State-Management-Smurfs/static/js/main.d8cbff33.chunk.js"
+    "revision": "a99ecdffb5b508ab22d4",
+    "url": "/Sprint-Challenge-State-Management-Smurfs/static/js/main.feef38de.chunk.js"
   },
   {
     "revision": "c6e3213f1b3a108e1c80",
