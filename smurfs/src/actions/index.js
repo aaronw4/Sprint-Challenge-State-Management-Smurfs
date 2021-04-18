@@ -6,7 +6,7 @@ export const ADD_NUMBER = 'ADD_NUMBER'
 
 export const getSmurfData = () => dispatch => {
     axios
-        .get('http://localhost:3333/smurfs')
+        .get('https://arw-smurfs-database.herokuapp.com/smurfs')
         .then(res => dispatch({
                 type: GET_SMURF_DATA,
                 payload: res.data
@@ -19,7 +19,7 @@ export const getSmurfData = () => dispatch => {
 
 export const postSmurf = item => dispatch => {
     axios
-        .post(`http://localhost:3333/smurfs`, {
+        .post(`https://arw-smurfs-database.herokuapp.com/smurfs`, {
             name: item.name,
             height: item.height,
             age: item.age,
@@ -43,7 +43,7 @@ export const addNumber = id => {
 
 export const removeSmurf = id => dispatch => {
     axios
-        .delete(`http://localhost:3333/smurfs/${id}`)
+        .delete(`https://arw-smurfs-database.herokuapp.com/smurfs/${id}`)
         .then(console.log(id))
         .then(dispatch({
             type: REMOVE_SMURF,
